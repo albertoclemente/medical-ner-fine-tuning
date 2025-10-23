@@ -84,9 +84,10 @@ print("\n" + "="*80)
 print("LOADING DATASETS")
 print("="*80)
 
-# Load datasets
-train_data = load_jsonl('train.jsonl')
-val_data = load_jsonl('validation.jsonl')
+    # Load datasets
+    print("\n📂 Loading datasets...")
+    train_data = load_jsonl('../data/train.jsonl')
+    val_data = load_jsonl('../data/validation.jsonl')
 
 print(f"✓ Train samples loaded: {len(train_data)}")
 print(f"✓ Validation samples loaded: {len(val_data)}")

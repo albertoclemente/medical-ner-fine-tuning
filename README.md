@@ -39,18 +39,18 @@ pip install -r requirements.txt
 ### 1. Split the Data
 
 ```bash
-python split_data.py
+python scripts/split_data.py
 ```
 
 This creates:
-- `train.jsonl` (2,400 examples)
-- `validation.jsonl` (300 examples)
-- `test.jsonl` (300 examples)
+- `data/train.jsonl` (2,400 examples)
+- `data/validation.jsonl` (300 examples)
+- `data/test.jsonl` (300 examples)
 
 ### 2. Train the Model
 
 ```bash
-python train.py
+python scripts/train.py
 ```
 
 Training configuration:
@@ -64,7 +64,7 @@ Training configuration:
 ### 3. Evaluate on Test Set
 
 ```bash
-python validate_model.py
+python scripts/validate_model.py
 ```
 
 Metrics calculated:
@@ -75,7 +75,7 @@ Metrics calculated:
 
 ## 📓 Jupyter Notebook
 
-The main notebook `Medical_NER_Fine_Tuning.ipynb` provides an interactive walkthrough:
+The main notebook `notebooks/Medical_NER_Fine_Tuning.ipynb` provides an interactive walkthrough:
 
 1. **Data Preparation**: Loading and splitting data
 2. **Model Setup**: Base model + LoRA configuration
@@ -86,21 +86,29 @@ The main notebook `Medical_NER_Fine_Tuning.ipynb` provides an interactive walkth
 ## 🏗️ Project Structure
 
 ```
-├── Medical_NER_Fine_Tuning.ipynb          # Main training notebook
-├── train.py                               # Standalone training script
-├── validate_model.py                      # Test set evaluation
-├── split_data.py                          # Data splitting utility
-├── requirements.txt                       # Python dependencies
-├── both_rel_instruct_all.jsonl           # Training data (3,000 examples)
+├── README.md                                  # This file
+├── requirements.txt                           # Python dependencies
 │
-├── Documentation/
-│   ├── QUICK_START.md                     # Getting started guide
-│   ├── FINE_TUNING_PLAN.md               # Detailed training plan
-│   ├── VALIDATION_STRATEGY.md            # Why validation vs test sets
-│   ├── THREE_WAY_SPLIT_GUIDE.md          # Data splitting best practices
-│   ├── CHECKPOINT_NAMING.md              # Model naming conventions
-│   ├── PRACTICAL_USE_CASES.md            # Real-world applications
-│   └── IMPLEMENTATION_SUMMARY.md         # Change log
+├── notebooks/
+│   ├── Medical_NER_Fine_Tuning.ipynb         # Main training notebook
+│   └── Chapter_10_Fine_Tuning_using_Cohere_for_Medical_Data.ipynb  # Original Cohere example
+│
+├── scripts/
+│   ├── train.py                              # Standalone training script
+│   ├── validate_model.py                     # Test set evaluation
+│   └── split_data.py                         # Data splitting utility
+│
+├── data/
+│   └── both_rel_instruct_all.jsonl          # Training data (3,000 examples)
+│
+└── docs/
+    ├── QUICK_START.md                        # Getting started guide
+    ├── FINE_TUNING_PLAN.md                  # Detailed training plan
+    ├── VALIDATION_STRATEGY.md               # Why validation vs test sets
+    ├── THREE_WAY_SPLIT_GUIDE.md             # Data splitting best practices
+    ├── CHECKPOINT_NAMING.md                 # Model naming conventions
+    ├── PRACTICAL_USE_CASES.md               # Real-world applications
+    └── IMPLEMENTATION_SUMMARY.md            # Change log
 ```
 
 ## 🔧 Configuration
@@ -163,10 +171,10 @@ Example: `llama-3.2-3b-medical-ner-20241023_143022`
 
 ## 📚 Documentation
 
-- **[Quick Start Guide](QUICK_START.md)**: Get up and running in 5 minutes
-- **[Fine-Tuning Plan](FINE_TUNING_PLAN.md)**: Detailed training methodology
-- **[Validation Strategy](VALIDATION_STRATEGY.md)**: Understanding train/val/test splits
-- **[Practical Use Cases](PRACTICAL_USE_CASES.md)**: Real-world applications
+- **[Quick Start Guide](docs/QUICK_START.md)**: Get up and running in 5 minutes
+- **[Fine-Tuning Plan](docs/FINE_TUNING_PLAN.md)**: Detailed training methodology
+- **[Validation Strategy](docs/VALIDATION_STRATEGY.md)**: Understanding train/val/test splits
+- **[Practical Use Cases](docs/PRACTICAL_USE_CASES.md)**: Real-world applications
 
 ## ⚠️ Important Notes
 

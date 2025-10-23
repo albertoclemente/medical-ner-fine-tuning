@@ -89,7 +89,7 @@ print("\n" + "="*80)
 print("LOADING TEST DATA")
 print("="*80)
 
-with open('test.jsonl', 'r', encoding='utf-8') as f:
+with open('../data/test.jsonl', 'r', encoding='utf-8') as f:
     test_samples = [json.loads(line) for line in f]
 
 print(f"✓ Loaded {len(test_samples)} test samples")

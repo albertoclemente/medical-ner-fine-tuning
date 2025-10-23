@@ -13,7 +13,7 @@ def main():
     print("Loading dataset...")
     
     # Load data
-    with open('both_rel_instruct_all.jsonl', 'r', encoding='utf-8') as f:
+    with open('../data/both_rel_instruct_all.jsonl', 'r', encoding='utf-8') as f:
         data = [json.loads(line) for line in f]
     
     print(f"Total samples loaded: {len(data)}")
@@ -36,17 +36,17 @@ def main():
     )
     
     # Save train set
-    with open('train.jsonl', 'w', encoding='utf-8') as f:
+    with open('../data/train.jsonl', 'w', encoding='utf-8') as f:
         for item in train_data:
             f.write(json.dumps(item) + '\n')
     
     # Save validation set (used during training)
-    with open('validation.jsonl', 'w', encoding='utf-8') as f:
+    with open('../data/validation.jsonl', 'w', encoding='utf-8') as f:
         for item in val_data:
             f.write(json.dumps(item) + '\n')
     
     # Save test set (used only for final evaluation)
-    with open('test.jsonl', 'w', encoding='utf-8') as f:
+    with open('../data/test.jsonl', 'w', encoding='utf-8') as f:
         for item in test_data:
             f.write(json.dumps(item) + '\n')
     
@@ -61,9 +61,9 @@ def main():
     print(f"  - Test: Used ONLY after training for final evaluation")
     
     print(f"\n✓ Files created:")
-    print(f"  - train.jsonl")
-    print(f"  - validation.jsonl (for training monitoring)")
-    print(f"  - test.jsonl (for final evaluation)")
+    print(f"  - ../data/train.jsonl")
+    print(f"  - ../data/validation.jsonl (for training monitoring)")
+    print(f"  - ../data/test.jsonl (for final evaluation)")
 
 if __name__ == "__main__":
     main()
