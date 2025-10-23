@@ -1,0 +1,21 @@
+# Core dependencies for fine-tuning
+torch>=2.0.0
+transformers>=4.40.0
+datasets>=2.14.0
+peft>=0.10.0
+accelerate>=0.27.0
+bitsandbytes>=0.43.0
+scipy>=1.11.0
+
+# Hugging Face integration
+huggingface-hub>=0.20.0
+tokenizers>=0.15.0
+
+# Training utilities
+trl>=0.8.0
+scikit-learn>=1.3.0
+
+# Optional but recommended
+wandb>=0.16.0  # For experiment tracking
+sentencepiece>=0.2.0  # For some tokenizers
+protobuf>=4.25.0
