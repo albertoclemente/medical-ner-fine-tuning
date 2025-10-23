@@ -20,6 +20,7 @@ from transformers import (
 from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
 from huggingface_hub import login
 import wandb
+from pathlib import Path
 
 # ========================================
 # 1. CONFIGURATION
@@ -84,10 +85,12 @@ print("\n" + "="*80)
 print("LOADING DATASETS")
 print("="*80)
 
-    # Load datasets
-    print("\n📂 Loading datasets...")
-    train_data = load_jsonl('../data/train.jsonl')
-    val_data = load_jsonl('../data/validation.jsonl')
+print("\n📂 Loading datasets...")
+script_dir = Path(__file__).resolve().parent
+data_dir = script_dir.parent / "data"
+
+train_data = load_jsonl(data_dir / 'train.jsonl')
+val_data = load_jsonl(data_dir / 'validation.jsonl')
 
 print(f"✓ Train samples loaded: {len(train_data)}")
 print(f"✓ Validation samples loaded: {len(val_data)}")

@@ -7,6 +7,7 @@ import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
 from peft import PeftModel
 import json
+from pathlib import Path
 from typing import List, Dict
 
 # ========================================
@@ -89,7 +90,10 @@ print("\n" + "="*80)
 print("LOADING TEST DATA")
 print("="*80)
 
-with open('../data/test.jsonl', 'r', encoding='utf-8') as f:
+script_dir = Path(__file__).resolve().parent
+data_dir = script_dir.parent / "data"
+
+with open(data_dir / 'test.jsonl', 'r', encoding='utf-8') as f:
     test_samples = [json.loads(line) for line in f]
 
 print(f"✓ Loaded {len(test_samples)} test samples")
