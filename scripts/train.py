@@ -36,8 +36,20 @@ HF_MODEL_ID = f"{HF_USERNAME}/llama3-medical-ner-lora-{TIMESTAMP}"
 print(f"Training session timestamp: {TIMESTAMP}")
 print(f"HuggingFace model ID: {HF_MODEL_ID}")
 
+# Login to Weights & Biases
+if os.getenv("WANDB_API_KEY"):
+    wandb.login(key=os.getenv("WANDB_API_KEY"))
+    print("✓ Logged in to Weights & Biases using WANDB_API_KEY")
+else:
+    print("⚠ Warning: WANDB_API_KEY not found. Attempting to use cached login...")
+    try:
+        wandb.login()
+        print("✓ Logged in to Weights & Biases using cached credentials")
+    except Exception as e:
+        print(f"⚠ Warning: Could not login to W&B: {e}")
+        print("  Run 'wandb login' first or set WANDB_API_KEY environment variable")
+
 # Initialize Weights & Biases
-# Set WANDB_API_KEY environment variable or run 'wandb login' first
 wandb.init(
     project="medical-ner-finetuning",
     name=f"llama3-medical-ner-{TIMESTAMP}",
