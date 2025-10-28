@@ -73,15 +73,21 @@ Metrics calculated:
 - Recall (per entity type)
 - F1 Score (macro-averaged)
 
-## 📓 Jupyter Notebook
+## 📓 Jupyter Notebooks
 
-The main notebook `notebooks/Medical_NER_Fine_Tuning.ipynb` provides an interactive walkthrough:
-
-1. **Data Preparation**: Loading and splitting data
+### Training Notebook: `notebooks/Medical_NER_Fine_Tuning.ipynb`
+Complete training pipeline:
+1. **Data Preparation**: Loading and splitting data (80/10/10)
 2. **Model Setup**: Base model + LoRA configuration
-3. **Training**: Fine-tuning with validation monitoring
-4. **Evaluation**: Comprehensive metrics on test set
-5. **Custom Testing**: Test on your own medical texts (Section 17)
+3. **Training**: Fine-tuning with W&B monitoring
+4. **Checkpointing**: Save and upload to HuggingFace Hub
+
+### Evaluation Notebook: `notebooks/Medical_NER_Evaluation.ipynb`
+Comprehensive evaluation after training:
+1. **Load Fine-tuned Model**: From local path or HuggingFace Hub
+2. **Test Set Evaluation**: Metrics on unseen test data
+3. **Performance Analysis**: Precision, Recall, F1 scores
+4. **Custom Testing**: Test on your own medical texts
 
 ## 🏗️ Project Structure
 
@@ -90,7 +96,8 @@ The main notebook `notebooks/Medical_NER_Fine_Tuning.ipynb` provides an interact
 ├── requirements.txt                           # Python dependencies
 │
 ├── notebooks/
-│   ├── Medical_NER_Fine_Tuning.ipynb         # Main training notebook
+│   ├── Medical_NER_Fine_Tuning.ipynb         # Training notebook
+│   ├── Medical_NER_Evaluation.ipynb          # Evaluation notebook
 │   └── Chapter_10_Fine_Tuning_using_Cohere_for_Medical_Data.ipynb  # Original Cohere example
 │
 ├── scripts/
