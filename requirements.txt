@@ -4,7 +4,7 @@ transformers>=4.40.0
 datasets>=2.14.0
 peft>=0.10.0
 accelerate>=0.27.0
-bitsandbytes>=0.43.0
+bitsandbytes>=0.42.0  # Note: 0.43.0+ not available on macOS, using 0.42.0
 scipy>=1.11.0
 
 # Hugging Face integration

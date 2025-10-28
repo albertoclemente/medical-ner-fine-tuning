@@ -1,4 +1,6 @@
 import pytest
+import sys
+from packaging import version
 
 transformers = pytest.importorskip("transformers")
 datasets = pytest.importorskip("datasets")
@@ -18,6 +20,10 @@ from peft import LoraConfig, get_peft_model
 
 @pytest.mark.slow
 @pytest.mark.integration
+@pytest.mark.skipif(
+    version.parse(torch.__version__) < version.parse("2.6.0"),
+    reason="Requires PyTorch >= 2.6 for security compliance. Skip on older versions."
+)
 def test_tiny_model_trains_single_step(tmp_path):
     """Ensures the training stack (tokenizer → model → LoRA → Trainer) is functional."""
     model_name = "sshleifer/tiny-gpt2"
