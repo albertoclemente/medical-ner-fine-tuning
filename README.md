@@ -114,6 +114,7 @@ Comprehensive evaluation after training:
     ├── VALIDATION_STRATEGY.md               # Why validation vs test sets
     ├── THREE_WAY_SPLIT_GUIDE.md             # Data splitting best practices
     ├── CHECKPOINT_NAMING.md                 # Model naming conventions
+    ├── CHECKPOINT_STRATEGY.md               # Checkpoint upload strategy (NEW)
     ├── PRACTICAL_USE_CASES.md               # Real-world applications
     └── IMPLEMENTATION_SUMMARY.md            # Change log
 ```
@@ -143,11 +144,30 @@ training_args = TrainingArguments(
     gradient_accumulation_steps=4,
     learning_rate=2e-4,
     warmup_steps=100,
-    logging_steps=50,
-    save_strategy="epoch",
-    evaluation_strategy="epoch"
+    logging_steps=10,
+    save_strategy="steps",
+    save_steps=50,               # Checkpoint every 50 steps
+    eval_strategy="steps",
+    eval_steps=50,               # Evaluate every 50 steps
 )
 ```
+
+### Checkpoint Strategy
+
+**Automatic checkpointing every 50 steps** with upload to Hugging Face Hub:
+
+- **Local saves**: `./llama3-medical-ner-lora/checkpoint-{step}/`
+- **HF uploads**: `{username}/llama3-medical-ner-checkpoint-{step}-{timestamp}`
+- **Final model**: `{username}/llama3-medical-ner-lora-final-{timestamp}`
+
+Example checkpoint names:
+```
+albyos/llama3-medical-ner-checkpoint-50-20251104_143022
+albyos/llama3-medical-ner-checkpoint-100-20251104_145511
+albyos/llama3-medical-ner-lora-final-20251104_161245
+```
+
+See [CHECKPOINT_STRATEGY.md](docs/CHECKPOINT_STRATEGY.md) for details.
 
 ## 📈 Expected Results
 
