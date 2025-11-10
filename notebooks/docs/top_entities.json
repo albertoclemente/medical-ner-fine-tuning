@@ -1,0 +1,658 @@
+{
+  "top_chemicals": [
+    {
+      "name": "dopamine",
+      "count": 51
+    },
+    {
+      "name": "cocaine",
+      "count": 35
+    },
+    {
+      "name": "haloperidol",
+      "count": 33
+    },
+    {
+      "name": "creatinine",
+      "count": 32
+    },
+    {
+      "name": "calcium",
+      "count": 30
+    },
+    {
+      "name": "potassium",
+      "count": 26
+    },
+    {
+      "name": "morphine",
+      "count": 25
+    },
+    {
+      "name": "lithium",
+      "count": 24
+    },
+    {
+      "name": "serotonin",
+      "count": 24
+    },
+    {
+      "name": "doxorubicin",
+      "count": 24
+    },
+    {
+      "name": "cyclophosphamide",
+      "count": 23
+    },
+    {
+      "name": "oxygen",
+      "count": 23
+    },
+    {
+      "name": "levodopa",
+      "count": 22
+    },
+    {
+      "name": "amphetamine",
+      "count": 21
+    },
+    {
+      "name": "tacrolimus",
+      "count": 20
+    },
+    {
+      "name": "acetylcholine",
+      "count": 19
+    },
+    {
+      "name": "steroid",
+      "count": 19
+    },
+    {
+      "name": "diazepam",
+      "count": 19
+    },
+    {
+      "name": "scopolamine",
+      "count": 18
+    },
+    {
+      "name": "sodium",
+      "count": 18
+    },
+    {
+      "name": "pilocarpine",
+      "count": 18
+    },
+    {
+      "name": "apomorphine",
+      "count": 18
+    },
+    {
+      "name": "amiodarone",
+      "count": 17
+    },
+    {
+      "name": "heparin",
+      "count": 17
+    },
+    {
+      "name": "dexamethasone",
+      "count": 17
+    },
+    {
+      "name": "lidocaine",
+      "count": 16
+    },
+    {
+      "name": "cisplatin",
+      "count": 16
+    },
+    {
+      "name": "adriamycin",
+      "count": 16
+    },
+    {
+      "name": "glutamate",
+      "count": 16
+    },
+    {
+      "name": "angiotensin",
+      "count": 15
+    },
+    {
+      "name": "epinephrine",
+      "count": 15
+    },
+    {
+      "name": "alcohol",
+      "count": 15
+    },
+    {
+      "name": "verapamil",
+      "count": 15
+    },
+    {
+      "name": "ketamine",
+      "count": 15
+    },
+    {
+      "name": "naloxone",
+      "count": 14
+    },
+    {
+      "name": "carbamazepine",
+      "count": 14
+    },
+    {
+      "name": "propranolol",
+      "count": 14
+    },
+    {
+      "name": "puromycin aminonucleoside",
+      "count": 14
+    },
+    {
+      "name": "steroids",
+      "count": 14
+    },
+    {
+      "name": "atropine",
+      "count": 14
+    },
+    {
+      "name": "nmda",
+      "count": 14
+    },
+    {
+      "name": "bupivacaine",
+      "count": 14
+    },
+    {
+      "name": "clonidine",
+      "count": 13
+    },
+    {
+      "name": "nicotine",
+      "count": 13
+    },
+    {
+      "name": "warfarin",
+      "count": 13
+    },
+    {
+      "name": "sirolimus",
+      "count": 13
+    },
+    {
+      "name": "gentamicin",
+      "count": 13
+    },
+    {
+      "name": "methamphetamine",
+      "count": 13
+    },
+    {
+      "name": "paracetamol",
+      "count": 12
+    },
+    {
+      "name": "aspirin",
+      "count": 12
+    }
+  ],
+  "top_diseases": [
+    {
+      "name": "toxicity",
+      "count": 72
+    },
+    {
+      "name": "hypotension",
+      "count": 52
+    },
+    {
+      "name": "seizures",
+      "count": 52
+    },
+    {
+      "name": "pain",
+      "count": 50
+    },
+    {
+      "name": "hypertension",
+      "count": 43
+    },
+    {
+      "name": "seizure",
+      "count": 35
+    },
+    {
+      "name": "proteinuria",
+      "count": 33
+    },
+    {
+      "name": "bradycardia",
+      "count": 32
+    },
+    {
+      "name": "nephrotoxicity",
+      "count": 30
+    },
+    {
+      "name": "parkinson's disease",
+      "count": 27
+    },
+    {
+      "name": "nausea",
+      "count": 26
+    },
+    {
+      "name": "depression",
+      "count": 23
+    },
+    {
+      "name": "renal failure",
+      "count": 23
+    },
+    {
+      "name": "hepatitis",
+      "count": 21
+    },
+    {
+      "name": "hepatotoxicity",
+      "count": 21
+    },
+    {
+      "name": "myocardial infarction",
+      "count": 20
+    },
+    {
+      "name": "tumor",
+      "count": 20
+    },
+    {
+      "name": "thrombocytopenia",
+      "count": 20
+    },
+    {
+      "name": "neurotoxicity",
+      "count": 20
+    },
+    {
+      "name": "hypotensive",
+      "count": 19
+    },
+    {
+      "name": "acute renal failure",
+      "count": 19
+    },
+    {
+      "name": "catalepsy",
+      "count": 19
+    },
+    {
+      "name": "cardiotoxicity",
+      "count": 18
+    },
+    {
+      "name": "hypertensive",
+      "count": 17
+    },
+    {
+      "name": "headache",
+      "count": 17
+    },
+    {
+      "name": "overdose",
+      "count": 17
+    },
+    {
+      "name": "stroke",
+      "count": 17
+    },
+    {
+      "name": "anemia",
+      "count": 17
+    },
+    {
+      "name": "cardiomyopathy",
+      "count": 16
+    },
+    {
+      "name": "cystitis",
+      "count": 15
+    },
+    {
+      "name": "hyperactivity",
+      "count": 15
+    },
+    {
+      "name": "vomiting",
+      "count": 15
+    },
+    {
+      "name": "nephrotoxic",
+      "count": 15
+    },
+    {
+      "name": "dyskinesias",
+      "count": 14
+    },
+    {
+      "name": "heart failure",
+      "count": 14
+    },
+    {
+      "name": "convulsions",
+      "count": 14
+    },
+    {
+      "name": "cancer",
+      "count": 14
+    },
+    {
+      "name": "nephropathy",
+      "count": 13
+    },
+    {
+      "name": "hemolytic anemia",
+      "count": 13
+    },
+    {
+      "name": "death",
+      "count": 13
+    },
+    {
+      "name": "hemorrhagic",
+      "count": 12
+    },
+    {
+      "name": "rheumatoid arthritis",
+      "count": 12
+    },
+    {
+      "name": "coronary artery disease",
+      "count": 12
+    },
+    {
+      "name": "psychiatric",
+      "count": 12
+    },
+    {
+      "name": "toxicities",
+      "count": 12
+    },
+    {
+      "name": "atrial fibrillation",
+      "count": 12
+    },
+    {
+      "name": "amnesia",
+      "count": 12
+    },
+    {
+      "name": "arrhythmia",
+      "count": 12
+    },
+    {
+      "name": "dyskinesia",
+      "count": 12
+    },
+    {
+      "name": "necrosis",
+      "count": 11
+    }
+  ],
+  "top_chemical_disease_pairs": [
+    {
+      "chemical": "levodopa",
+      "disease": "dyskinesias",
+      "count": 12
+    },
+    {
+      "chemical": "haloperidol",
+      "disease": "catalepsy",
+      "count": 11
+    },
+    {
+      "chemical": "scopolamine",
+      "disease": "amnesia",
+      "count": 8
+    },
+    {
+      "chemical": "pilocarpine",
+      "disease": "status epilepticus",
+      "count": 7
+    },
+    {
+      "chemical": "puromycin aminonucleoside",
+      "disease": "proteinuria",
+      "count": 6
+    },
+    {
+      "chemical": "cyclophosphamide",
+      "disease": "cystitis",
+      "count": 6
+    },
+    {
+      "chemical": "isoproterenol",
+      "disease": "myocardial infarction",
+      "count": 6
+    },
+    {
+      "chemical": "cocaine",
+      "disease": "seizures",
+      "count": 6
+    },
+    {
+      "chemical": "doxorubicin",
+      "disease": "cardiomyopathy",
+      "count": 6
+    },
+    {
+      "chemical": "heparin",
+      "disease": "thrombocytopenia",
+      "count": 5
+    },
+    {
+      "chemical": "pilocarpine",
+      "disease": "seizures",
+      "count": 5
+    },
+    {
+      "chemical": "gentamicin",
+      "disease": "acute renal failure",
+      "count": 5
+    },
+    {
+      "chemical": "nitroprusside",
+      "disease": "hypotension",
+      "count": 4
+    },
+    {
+      "chemical": "nitroglycerin",
+      "disease": "hypotension",
+      "count": 4
+    },
+    {
+      "chemical": "puromycin aminonucleoside",
+      "disease": "nephrotic syndrome",
+      "count": 4
+    },
+    {
+      "chemical": "sirolimus",
+      "disease": "proteinuria",
+      "count": 4
+    },
+    {
+      "chemical": "dexamethasone",
+      "disease": "hypertension",
+      "count": 4
+    },
+    {
+      "chemical": "clonidine",
+      "disease": "bradycardia",
+      "count": 4
+    },
+    {
+      "chemical": "valproate",
+      "disease": "encephalopathy",
+      "count": 4
+    },
+    {
+      "chemical": "amphetamine",
+      "disease": "hyperactivity",
+      "count": 4
+    },
+    {
+      "chemical": "capsaicin",
+      "disease": "pain",
+      "count": 4
+    },
+    {
+      "chemical": "cyclosporine",
+      "disease": "nephrotoxicity",
+      "count": 4
+    },
+    {
+      "chemical": "fentanyl",
+      "disease": "hypotension",
+      "count": 3
+    },
+    {
+      "chemical": "isoflurane",
+      "disease": "hypotension",
+      "count": 3
+    },
+    {
+      "chemical": "haloperidol",
+      "disease": "extrapyramidal symptoms",
+      "count": 3
+    },
+    {
+      "chemical": "cyclophosphamide",
+      "disease": "hemorrhagic cystitis",
+      "count": 3
+    },
+    {
+      "chemical": "capsaicin",
+      "disease": "hyperalgesia",
+      "count": 3
+    },
+    {
+      "chemical": "methamphetamine",
+      "disease": "hyperthermia",
+      "count": 3
+    },
+    {
+      "chemical": "carbamazepine",
+      "disease": "absence seizures",
+      "count": 3
+    },
+    {
+      "chemical": "lidocaine",
+      "disease": "convulsions",
+      "count": 3
+    },
+    {
+      "chemical": "pilocarpine",
+      "disease": "temporal lobe epilepsy",
+      "count": 3
+    },
+    {
+      "chemical": "tacrolimus",
+      "disease": "nephrotoxicity",
+      "count": 3
+    },
+    {
+      "chemical": "morphine",
+      "disease": "catalepsy",
+      "count": 3
+    },
+    {
+      "chemical": "ribavirin",
+      "disease": "hemolytic anemia",
+      "count": 3
+    },
+    {
+      "chemical": "cocaine",
+      "disease": "myocardial infarction",
+      "count": 2
+    },
+    {
+      "chemical": "labetalol",
+      "disease": "hypotension",
+      "count": 2
+    },
+    {
+      "chemical": "diltiazem",
+      "disease": "hypotension",
+      "count": 2
+    },
+    {
+      "chemical": "metoprolol",
+      "disease": "hypotension",
+      "count": 2
+    },
+    {
+      "chemical": "amiodarone",
+      "disease": "pneumonitis",
+      "count": 2
+    },
+    {
+      "chemical": "indomethacin",
+      "disease": "hyperkalemia",
+      "count": 2
+    },
+    {
+      "chemical": "prostaglandin e1",
+      "disease": "hypotension",
+      "count": 2
+    },
+    {
+      "chemical": "gemcitabine",
+      "disease": "thrombocytopenia",
+      "count": 2
+    },
+    {
+      "chemical": "gemcitabine",
+      "disease": "neutropenia",
+      "count": 2
+    },
+    {
+      "chemical": "fentanyl",
+      "disease": "respiratory depression",
+      "count": 2
+    },
+    {
+      "chemical": "fentanyl",
+      "disease": "bradycardia",
+      "count": 2
+    },
+    {
+      "chemical": "heparin",
+      "disease": "thrombosis",
+      "count": 2
+    },
+    {
+      "chemical": "lithium",
+      "disease": "polyuria",
+      "count": 2
+    },
+    {
+      "chemical": "cocaine",
+      "disease": "subarachnoid hemorrhage",
+      "count": 2
+    },
+    {
+      "chemical": "sodium nitroprusside",
+      "disease": "hypotension",
+      "count": 2
+    },
+    {
+      "chemical": "halothane",
+      "disease": "hypotension",
+      "count": 2
+    }
+  ]
+}

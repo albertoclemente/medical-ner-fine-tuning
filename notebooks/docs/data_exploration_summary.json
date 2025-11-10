@@ -1,0 +1,17 @@
+{
+  "total_samples": 3000,
+  "task_distribution": {
+    "Chemical Extraction": 1000,
+    "Disease Extraction": 1000,
+    "Relationship Extraction": 1000
+  },
+  "prompt_median_length": 1357.0,
+  "prompt_median_words": 195.0,
+  "unique_chemicals": 1578,
+  "unique_diseases": 2199,
+  "vocabulary_size": 13710,
+  "duplicate_prompts": 0,
+  "empty_completions": 0,
+  "recommended_split": "80/10/10",
+  "recommended_max_length": 2048
+}
